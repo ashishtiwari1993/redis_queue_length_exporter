@@ -59,6 +59,19 @@
 	  }
 	}
 
+Define queue group in `queue_type` object. Queue group has array of all queue name (q1, q2) of same behaviour. Map Queue group with host in `host` object. It will export queue length accroding to `queue.json ` file and It will assign queue labels in prometheus while storing data.
+
+Here is the sample file.
+
+
 ## What's exported?
 
 Queue length from the LLEN command are exported, See https://redis.io/commands/llen for more details.
+
+## What else?
+
+* Need to add grafana dashboard.
+* Open an issue if you have more suggestions or ideas about what to add.
+
+
+
