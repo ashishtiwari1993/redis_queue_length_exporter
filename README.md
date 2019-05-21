@@ -47,7 +47,7 @@
 
 Define queue group in `queue_type` object. Queue group has array of all queue name (q1, q2) of same behaviour. Map Queue group with host in `host` object. It will export queue length accroding to `queue.json ` file and It will assign queue labels in prometheus while storing data.
 
-Here is the sample file.
+Here is the sample file [queue.json](https://github.com/ashishtiwari1993/redis_queue_length_exporter/blob/master/queue.json).
 
 
 
