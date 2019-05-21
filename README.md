@@ -2,14 +2,14 @@
 
 ##  Run locally:
 
-    git clone https://github.com/ashishtiwari1993/redis-queue-length-prometheus-exporter.git
+    git clone https://github.com/ashishtiwari1993/redis_queue_length_exporter.git
     pip install prometheus_client
     pip install redis
     python llen.py
     
 ## Run via Docker:
 
-    git clone https://github.com/ashishtiwari1993/redis-queue-length-prometheus-exporter.git
+    git clone https://github.com/ashishtiwari1993/redis_queue_length_exporter.git
     cd redis_queue_length_exporter
     docker build -t "redis_queue_length_exporter" .
     docker run  -d --name 'redis_queue_length_exporter' -p 8000:8000 redis_queue_length_exporter
