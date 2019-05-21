@@ -1,22 +1,8 @@
 # Redis Queue Length Metrics Exporter
 
-##  Run locally:
-
-    git clone https://github.com/ashishtiwari1993/redis_queue_length_exporter.git
-    pip install prometheus_client
-    pip install redis
-    python llen.py
-    
-## Run via Docker:
-
+## Pull code:
     git clone https://github.com/ashishtiwari1993/redis_queue_length_exporter.git
     cd redis_queue_length_exporter
-    docker build -t "redis_queue_length_exporter" .
-    docker run  -d --name 'redis_queue_length_exporter' -p 8000:8000 redis_queue_length_exporter
-    
-
-## Test on browser:
-    localhost:8000
 
 ## Edit `queue.json`:
 
@@ -62,6 +48,23 @@
 Define queue group in `queue_type` object. Queue group has array of all queue name (q1, q2) of same behaviour. Map Queue group with host in `host` object. It will export queue length accroding to `queue.json ` file and It will assign queue labels in prometheus while storing data.
 
 Here is the sample file.
+
+
+
+##  Run locally:
+
+    pip install prometheus_client
+    pip install redis
+    python llen.py
+    
+## Run via Docker:
+
+    docker build -t "redis_queue_length_exporter" .
+    docker run  -d --name 'redis_queue_length_exporter' -p 8000:8000 redis_queue_length_exporter
+    
+
+## Test on browser:
+    localhost:8000
 
 
 ## What's exported?
