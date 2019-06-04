@@ -64,7 +64,7 @@ Here is the sample file [queue.json](https://github.com/ashishtiwari1993/redis_q
     
 
 ## Test on browser:
-    localhost:8000
+    localhost:8000/metrics
 
 
 ## What's exported?
