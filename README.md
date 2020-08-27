@@ -66,6 +66,10 @@ Here is the sample file [queue.json](https://github.com/ashishtiwari1993/redis_q
 ## Test on browser:
     localhost:8000/metrics
 
+## Grafana Dashboard 
+
+ID: `10287`  
+Dashboard URL: https://grafana.com/grafana/dashboards/10287
 
 ## What's exported?
 
@@ -73,7 +77,6 @@ Queue length from the LLEN command are exported, See https://redis.io/commands/l
 
 ## What else?
 
-* Need to add grafana dashboard.
 * Open an issue if you have more suggestions or ideas about what to add.
 
 
