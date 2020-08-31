@@ -66,6 +66,23 @@ Here is the sample file [queue.json](https://github.com/ashishtiwari1993/redis_q
 ## Test on browser:
     localhost:8000/metrics
 
+## Add Job to the Prometheus config
+
+Add below block to the `prometheus.yml` file.
+
+```yaml
+ - job_name: redis_llen_exporter
+   scrape_interval: 5s
+   scrape_timeout:  5s
+   metrics_path: "/metrics" 
+   static_configs: 
+   - targets: ['localhost:8000']
+```
+
+Prometheus will pulling the data for every 5 seconds from the `localhost:8000/metrics`.
+
+You can change port, interval and timeout according to your requirements. 
+
 ## Grafana Dashboard 
 
 ID: `10287`  
