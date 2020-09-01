@@ -1,4 +1,4 @@
-# Redis Queue Length Metrics Exporter
+# Redis Queue/List Length Metrics Exporter
 
 ## Pull code:
     git clone https://github.com/ashishtiwari1993/redis_queue_length_exporter.git
